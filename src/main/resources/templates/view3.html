@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Invoice</h1>
+    <table data-th-object="${invoice}">
+        <tr>
+            <td>
+                Invoice id:
+            </td>
+            <td>
+                <span name="invoice_id" data-th-field="*{invoice_id}" data-th-text="*{invoice_id}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <span name="name" data-th-field="*{name}" data-th-text="*{name}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+                <span name="address" data-th-field="*{address}" data-th-text="*{address}"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total:
+            </td>
+            <td>
+                <span name="total" data-th-field="*{total}" data-th-text="*{total}"></span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
